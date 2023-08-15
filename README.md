@@ -55,7 +55,7 @@ The portfolio includes sections for showcasing my projects, providing informatio
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/bmsptra24/Portofolio/blob/main/MIT%20License).
 
 ## Contact
 
