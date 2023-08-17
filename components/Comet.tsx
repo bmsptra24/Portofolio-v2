@@ -3,7 +3,7 @@ import React from "react";
 export const Comet = () => {
   return (
     <div className="absolute inset-0 -z-10">
-      <div className="star"></div>
+      {/* <div className="star"></div>
       <div className="meteor-1"></div>
       <div className="meteor-2"></div>
       <div className="meteor-3"></div>
@@ -18,7 +18,7 @@ export const Comet = () => {
       <div className="meteor-12"></div>
       <div className="meteor-13"></div>
       <div className="meteor-14"></div>
-      <div className="meteor-15"></div>
+      <div className="meteor-15"></div> */}
     </div>
   );
 };

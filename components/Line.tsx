@@ -20,7 +20,7 @@ export const Line = () => {
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     setIsScroll(latest > 0.001);
-    if (latest > 0.2) {
+    if (latest > 0.01) {
       hideOutline();
     }
   });

@@ -3,7 +3,7 @@ import anime from "animejs";
 import React, { useEffect } from "react";
 
 type props = {
-  src: string;
+  src: any;
 };
 
 export const Meteor = ({ src }: props) => {
@@ -54,7 +54,7 @@ export const Meteor = ({ src }: props) => {
     <div className="relative -rotate-45">
       <svg
         id="scene"
-        width="350"
+        width="220"
         height="60"
         viewBox="0 0 281 84"
         fill="none"
@@ -75,7 +75,7 @@ export const Meteor = ({ src }: props) => {
           fill="#FACC15"
         />
       </svg>
-      <div className="absolute top-[10px] left-[90px] h-10 w-10">
+      <div className="absolute top-[10px] left-[33px] h-10 w-10 bg-slate-50 p-1 rounded-full flex justify-center items-center">
         <img src={src} alt="icon" />
       </div>
     </div>

@@ -3,7 +3,7 @@ import { useAnimation, useInView, motion, Variants } from "framer-motion";
 import React, { useRef } from "react";
 
 type prop = {
-  children: JSX.Element;
+  children: any;
   variant: Variants;
   className?: string;
   delay?: number;
@@ -16,7 +16,7 @@ export const Reveal = ({
   className = "",
   delay = 0.25,
   duration = 0.5,
-}: prop) => {
+}: prop) => { 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
