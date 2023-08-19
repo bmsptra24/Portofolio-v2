@@ -8,17 +8,17 @@ import Link from "next/link";
 
 export const Section5 = () => {
   return (
-    <section className="flex h-[500px] pb-40">
+    <section className="flex h-screen sm:h-[500px] sm:pb-40 -mt-36 sm:mt-auto">
       <LeftSection />
-      <div className="w-3/4 flex items-center pl-5 mt-14">
-        <div className={`${spaceGrotesk.className}`}>
+      <div className="sm:w-3/4 flex items-center pl-5">
+        <div className={`${spaceGrotesk.className} flex justify-center flex-col h-full`}>
           <Reveal
             variant={{
               hidden: { opacity: 0, x: 75 },
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-2`}>
+            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-1 sm:ml-2`}>
               Need a frontend developer?
             </p>
           </Reveal>
@@ -31,7 +31,7 @@ export const Section5 = () => {
           >
             <Link
               href="https://www.linkedin.com/in/bmsptra24/"
-              className="text-8xl cursor-pointer transition-all mt-2 no-underline hover:underline ease-in-out"
+              className="text-7xl sm:text-8xl cursor-pointer transition-all mt-2 no-underline hover:underline ease-in-out"
             >{`Let’s work together`}</Link>
           </Reveal>
         </div>

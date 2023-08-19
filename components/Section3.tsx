@@ -20,16 +20,16 @@ export const Section3 = () => {
   //   console.log({ width });
 
   return (
-    <section className="flex h-[850px]">
+    <section className="flex h-[1000px] sm:h-[850px]">
       <LeftSection />
-      <div className="w-3/4 flex items-center pl-3 ml-2 pt-14 relative">
+      <div className="sm:w-3/4 flex w-full sm:items-center sm:pl-3 sm:ml-2 pt-14 relative">
         <motion.div
-          className="overflow-hidden w-[900px] absolute bottom-28 -left-2 bg-transparent cursor-grab"
+          className="sm:overflow-hidden w-96 sm:w-[80vw] lg:w-[900px] absolute bottom-28 -left-2 bg-transparent cursor-grab"
           whileTap={{ cursor: "grabbing" }}
         >
-          <i className="w-8 h-full z-10 bg-gradient-to-r from-two to-transparent absolute letf-0"></i>
+          <i className="hidden sm:block w-8 h-full z-10 bg-gradient-to-r from-two to-transparent absolute letf-0"></i>
           <i
-            className="w-32 h-full z-10 bg-gradient-to-l from-two to-transparent absolute right-0"
+            className="hidden sm:block w-32 h-full z-10 bg-gradient-to-l from-two to-transparent absolute right-0"
             onClick={() => {}}
           ></i>
           <motion.div
@@ -38,12 +38,12 @@ export const Section3 = () => {
               right: 0,
               left: -(projectConfig.length * 500),
             }}
-            className={`flex items-center p-7 h-[530px] w-max`}
+            className={`flex flex-col sm:flex-row items-center sm:p-7 h-[530px] w-max`}
           >
             {projectConfig.map(({ img, title, link }, idx) => (
               <div className="flex" key={idx}>
                 <div
-                  className="relative w-[750px] h-fit px-7 flex justify-center items-center overflow-hidden py-3"
+                  className="relative w-[91vw] sm:w-[750px] h-fit px-7 flex justify-center items-center overflow-hidden py-3"
                   id={`project-${idx + 1}`}
                   key={idx}
                 >
@@ -54,7 +54,7 @@ export const Section3 = () => {
                   ></img>
                   <Link
                     id="project"
-                    className="transition-all absolute text-4xl font-black cursor-pointer"
+                    className="transition-all absolute  sm:text-4xl font-black cursor-pointer"
                     href={link}
                     target="_blank"
                     onMouseOver={() => {
@@ -102,7 +102,7 @@ export const Section3 = () => {
           </motion.div>
         </motion.div>
         <div
-          className={`${spaceGrotesk.className} pointer-events-none text-9xl absolute bottom-16 -left-2 pl-9 bg-gradient-to-t from-two to-transparent w-full`}
+          className={`${spaceGrotesk.className} pointer-events-none text-7xl sm:text-9xl absolute top-40 bottom-auto sm:top-auto sm:bottom-16 sm:-left-2 pl-1 sm:pl-9 sm:bg-gradient-to-t from-two to-transparent w-full`}
         >
           <Reveal
             variant={{
@@ -119,7 +119,7 @@ export const Section3 = () => {
             }}
             delay={0.2}
           >
-            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-3`}>
+            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-1 sm:ml-3`}>
               My current project
             </p>
           </Reveal>

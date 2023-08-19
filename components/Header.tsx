@@ -7,7 +7,7 @@ import React from "react";
 import { AiFillLinkedin, AiOutlineMail, AiOutlineGithub } from "react-icons/ai";
 export const Header = () => {
   return (
-    <header className="container mx-auto px-28 h-20 flex items-center justify-between fixed z-10">
+    <header className="container mx-auto px-7 lg:px-28 h-20 flex items-center justify-between fixed z-10">
       <Reveal variant={variantReveal.t}>
         <p
           className={`${titilliumWeb.className} cursor-pointer hover:scale-110 hover:text-one transition-all ease-in-out`}

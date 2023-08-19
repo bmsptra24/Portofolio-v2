@@ -7,8 +7,8 @@ export const Section1 = () => {
   return (
     <section className="flex h-screen">
       <LeftSection />
-      <div className="w-3/4 flex items-center pl-5 pt-14">
-        <div className={`${spaceGrotesk.className} text-9xl`}>
+      <div className="w-3/4 flex items-center lg:pl-5 pt-14">
+        <div className={`${spaceGrotesk.className} text-7xl lg:text-9xl`}>
           <Reveal
             variant={{
               hidden: { opacity: 0, y: -75 },
@@ -25,7 +25,7 @@ export const Section1 = () => {
             }}
             delay={1.2}
           >
-            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-3`}>
+            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-1 lg:ml-3`}>
               Frontend developer anthusias
             </p>
           </Reveal>

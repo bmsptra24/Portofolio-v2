@@ -34,8 +34,10 @@ export const Section2 = () => {
   return (
     <section className="flex h-[710px]">
       <LeftSection />
-      <div className="w-3/4 flex items-center pl-5 pt-14 relative">
-        <div className={`flex flex-col items-end absolute top-32 right-28`}>
+      <div className="w-full flex items-center pl-5 pt-14 relative">
+        <div
+          className={`flex flex-col items-start lg:items-end absolute top-32 right-5 lg:right-28`}
+        >
           <Reveal variant={variantReveal.t}>
             <p className={`${spaceGrotesk.className} text-8xl`}>Tech Stack</p>
           </Reveal>
@@ -45,8 +47,8 @@ export const Section2 = () => {
             </p>
           </Reveal>
         </div>
-        <div className="absolute left-60 bottom-16 -z-10">
-          {/* comet */}
+        <div className="absolute left-0 lg:left-60 -bottom-10 lg:bottom-16 -z-10">
+          {/* meteor */}
           {techStack.map((e, idx) => (
             <div className="meteor w-min absolute" key={idx}>
               <Meteor src={e}></Meteor>

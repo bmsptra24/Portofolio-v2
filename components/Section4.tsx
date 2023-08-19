@@ -8,7 +8,7 @@ export const Section4 = () => {
   return (
     <section className="flex h-[850px]">
       <LeftSection />
-      <div className="w-3/4 flex items-center pl-5 pt-14">
+      <div className="w-full lg:w-3/4 flex items-center sm:pl-5 pt-14">
         <div className={`${spaceGrotesk.className}`}>
           <Reveal
             variant={{
@@ -16,7 +16,7 @@ export const Section4 = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <p className="text-8xl">Made with</p>
+            <p className="text-7xl sm:text-8xl">Made with</p>
           </Reveal>
           <Reveal
             variant={{
@@ -26,7 +26,7 @@ export const Section4 = () => {
             delay={0.2}
           >
             <div
-              className={`${titilliumWeb.className} text-2xl mt-4 ml-2 grid grid-cols-2`}
+              className={`${titilliumWeb.className} text-2xl mt-4 ml-1 sm:ml-2 grid grid-cols-2`}
             >
               <ul className="flex flex-col gap-1">
                 <li>Next JS</li>
