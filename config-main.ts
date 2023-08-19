@@ -53,8 +53,8 @@ interface starsConfigProps {
 }
 
 export const starsConfig: starsConfigProps = {
-  // total: 300,
-  total: 50,
+  total: 300,
+  // total: 50,
   colors: ["#D285F2", "#a855f7", "#f0abfc", "#fae8ff"],
 };
 
@@ -63,8 +63,8 @@ interface cometsConfigProps {
 }
 
 export const cometsConfig: cometsConfigProps = {
-  total: 0,
-  // total: 20,
+  // total: 0,
+  total: 20,
 };
 
 export const sosmedLink = {
