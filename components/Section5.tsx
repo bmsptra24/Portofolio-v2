@@ -4,6 +4,7 @@ import React from "react";
 import { LeftSection } from "./LeftSection";
 import { Reveal } from "@/animations/Reveal";
 import anime from "animejs";
+import Link from "next/link";
 
 export const Section5 = () => {
   return (
@@ -16,7 +17,6 @@ export const Section5 = () => {
               hidden: { opacity: 0, x: 75 },
               visible: { opacity: 1, x: 0 },
             }}
-            delay={1.2}
           >
             <p className={`${titilliumWeb.className} text-2xl mt-4 ml-2`}>
               Need a frontend developer?
@@ -29,7 +29,10 @@ export const Section5 = () => {
             }}
             delay={0.8}
           >
-            <p className="text-8xl cursor-pointer transition-all mt-2 no-underline hover:underline ease-in-out">{`Let’s work together`}</p>
+            <Link
+              href="https://www.linkedin.com/in/bmsptra24/"
+              className="text-8xl cursor-pointer transition-all mt-2 no-underline hover:underline ease-in-out"
+            >{`Let’s work together`}</Link>
           </Reveal>
         </div>
       </div>

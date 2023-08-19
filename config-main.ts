@@ -11,8 +11,9 @@ import react from "./public/techStack/react.png";
 import tailwind from "./public/techStack/tailwind.png";
 
 // project
-import mbd1 from "./public/project/mbd/1.png";
-import mbd2 from "./public/project/mbd/2.png";
+import img1 from "./public/project/mbd/1.png";
+import img2 from "./public/project/mbd/2.png";
+import img3 from "./public/project/mbd/3.png";
 
 export const techStack = [
   astro.src,
@@ -28,4 +29,44 @@ export const techStack = [
   react.src, //first
 ];
 
-export const projectConfig = [[mbd1.src, mbd2.src]];
+export const projectConfig = [
+  {
+    img: img1,
+    title: "Meja Belajar Digital",
+    link: "https://mejabelajardigital.web.app/",
+  },
+  {
+    img: img3,
+    title: "Root of Life",
+    link: "https://bmsptra24.github.io/Root-of-Life/",
+  },
+  {
+    img: img2,
+    title: "Web Portofolio 1",
+    link: "https://bmsptra24.github.io/Web-Portfolio/",
+  },
+];
+
+interface starsConfigProps {
+  total: number;
+  colors: string[];
+}
+
+export const starsConfig: starsConfigProps = {
+  total: 300,
+  colors: ["#D285F2", "#a855f7", "#f0abfc", "#fae8ff"],
+};
+
+interface cometsConfigProps {
+  total: number;
+}
+
+export const cometsConfig: cometsConfigProps = {
+  total: 20,
+};
+
+export const sosmedLink = {
+  mail: "mailto:sbima2432@gmail.com",
+  linkedin: "https://www.linkedin.com/in/bmsptra24/",
+  github: "https://github.com/bmsptra24",
+};

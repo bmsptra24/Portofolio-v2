@@ -14,9 +14,9 @@ export const Reveal = ({
   children,
   variant,
   className = "",
-  delay = 0.25,
+  delay = 0,
   duration = 0.5,
-}: prop) => { 
+}: prop) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();

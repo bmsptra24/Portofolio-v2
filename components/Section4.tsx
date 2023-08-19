@@ -2,6 +2,7 @@ import { spaceGrotesk, titilliumWeb } from "@/styles/global";
 import React from "react";
 import { LeftSection } from "./LeftSection";
 import { Reveal } from "@/animations/Reveal";
+import Link from "next/link";
 
 export const Section4 = () => {
   return (
@@ -14,7 +15,6 @@ export const Section4 = () => {
               hidden: { opacity: 0, y: -75 },
               visible: { opacity: 1, y: 0 },
             }}
-            delay={0.8}
           >
             <p className="text-8xl">Made with</p>
           </Reveal>
@@ -23,7 +23,7 @@ export const Section4 = () => {
               hidden: { opacity: 0, x: 75 },
               visible: { opacity: 1, x: 0 },
             }}
-            delay={1.2}
+            delay={0.2}
           >
             <div
               className={`${titilliumWeb.className} text-2xl mt-4 ml-2 grid grid-cols-2`}
@@ -41,8 +41,24 @@ export const Section4 = () => {
                 <li>2 easter eggs</li>
               </ul> */}
               <ul className="flex flex-col gap-1">
-                <li>Tulus🎶</li>
-                <li>Mayudi Ayunda🎶</li>
+                <Link
+                  target="_blank"
+                  className="hover:underline transition-all ease-in-out"
+                  href={
+                    "https://open.spotify.com/track/4GfK1qOF3uBWidbPlTCQRL?si=403785948dc84fc9"
+                  }
+                >
+                  Tulus
+                </Link>
+                <Link
+                  target="_blank"
+                  className="hover:underline transition-all ease-in-out"
+                  href={
+                    "https://open.spotify.com/track/0InJPuWIYp8fwlBGIQglLf?si=d4b6671f46b84678"
+                  }
+                >
+                  Maudy Ayunda
+                </Link>
               </ul>
             </div>
           </Reveal>
