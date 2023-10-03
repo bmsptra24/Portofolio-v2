@@ -1,12 +1,12 @@
-"use client";
-import { spaceGrotesk, titilliumWeb } from "@/styles/global";
-import React from "react";
-import { LeftSection } from "./LeftSection";
-import { Reveal } from "@/animations/Reveal";
-import { projectConfig } from "@/config-main";
-import { motion } from "framer-motion";
-import anime from "animejs";
-import Link from "next/link";
+'use client'
+import { spaceGrotesk, titilliumWeb } from '@/styles/global'
+import React from 'react'
+import { LeftSection } from './LeftSection'
+import { Reveal } from '@/animations/Reveal'
+import { projectConfig } from '@/config-main'
+import { motion } from 'framer-motion'
+import anime from 'animejs'
+import Link from 'next/link'
 
 export const Section3 = () => {
   //   const [width, setWidth] = useState(0);
@@ -25,7 +25,7 @@ export const Section3 = () => {
       <div className="sm:w-3/4 flex w-full sm:items-center sm:pl-3 sm:ml-2 pt-14 relative">
         <motion.div
           className="sm:overflow-hidden w-96 sm:w-[80vw] lg:w-[900px] absolute bottom-28 -left-2 bg-transparent cursor-grab"
-          whileTap={{ cursor: "grabbing" }}
+          whileTap={{ cursor: 'grabbing' }}
         >
           <i className="hidden sm:block w-8 h-full z-10 bg-gradient-to-r from-two to-transparent absolute letf-0"></i>
           <i
@@ -36,7 +36,7 @@ export const Section3 = () => {
             drag="x"
             dragConstraints={{
               right: 0,
-              left: -(projectConfig.length * 500),
+              left: -(projectConfig.length * 550),
             }}
             className={`flex flex-col sm:flex-row items-center sm:p-7 h-[530px] w-max`}
           >
@@ -61,37 +61,33 @@ export const Section3 = () => {
                       anime
                         .timeline({
                           targets: `#project-${idx + 1}>img`,
-                          easing: "spring",
+                          easing: 'easeOutExpo',
                           scale: 0.99,
-                          duration: 10,
                           loop: false,
-                          opacity: 0.95,
+                          opacity: 0.8,
                         })
                         .add({
                           targets: `#project-${idx + 1}>#project`,
-                          easing: "spring",
+                          easing: 'easeOutExpo',
                           scale: 1.2,
-                          duration: 10,
                           loop: false,
-                        });
+                        })
                     }}
                     onMouseLeave={() => {
                       anime
                         .timeline({
                           targets: `#project-${idx + 1}>img`,
-                          easing: "spring",
+                          easing: 'easeOutExpo',
                           scale: 1.05,
-                          duration: 10,
                           loop: false,
                           opacity: 0.5,
                         })
                         .add({
                           targets: `#project-${idx + 1}>#project`,
-                          easing: "spring",
+                          easing: 'easeOutExpo',
                           scale: 1,
-                          duration: 10,
                           loop: false,
-                        });
+                        })
                     }}
                   >
                     {title}
@@ -119,12 +115,14 @@ export const Section3 = () => {
             }}
             delay={0.2}
           >
-            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-1 sm:ml-3`}>
+            <p
+              className={`${titilliumWeb.className} text-2xl mt-4 ml-1 sm:ml-3`}
+            >
               My current project
             </p>
           </Reveal>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

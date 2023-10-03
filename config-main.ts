@@ -14,22 +14,28 @@ import tailwind from './public/techStack/tailwind.png'
 import img1 from './public/project/mbd/1.png'
 import img2 from './public/project/mbd/2.png'
 import img3 from './public/project/mbd/3.png'
+import img4 from './public/project/mbd/4.png'
 
 export const techStack = [
-  astro.src,
+  // astro.src,
   bootstrap.src,
-  express.src,
+  // express.src,
   node.src,
   js.src,
   css.src,
   html.src,
   firebase.src,
   tailwind.src,
-  next.src,
+  // next.src,
   react.src, //first
 ]
 
 export const projectConfig = [
+  {
+    img: img4,
+    title: 'Beet AI',
+    link: 'https://beet-ai.vercel.app/',
+  },
   {
     img: img1,
     title: 'Meja Belajar Digital',
@@ -53,7 +59,7 @@ interface starsConfigProps {
 }
 
 export const starsConfig: starsConfigProps = {
-  total: 300,
+  total: 200,
   // total: 50,
   colors: ['#D285F2', '#a855f7', '#f0abfc', '#fae8ff'],
 }

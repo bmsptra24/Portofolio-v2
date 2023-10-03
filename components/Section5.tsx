@@ -1,24 +1,28 @@
-"use client";
-import { spaceGrotesk, titilliumWeb } from "@/styles/global";
-import React from "react";
-import { LeftSection } from "./LeftSection";
-import { Reveal } from "@/animations/Reveal";
-import anime from "animejs";
-import Link from "next/link";
+'use client'
+import { spaceGrotesk, titilliumWeb } from '@/styles/global'
+import React from 'react'
+import { LeftSection } from './LeftSection'
+import { Reveal } from '@/animations/Reveal'
+import anime from 'animejs'
+import Link from 'next/link'
 
 export const Section5 = () => {
   return (
-    <section className="flex h-screen sm:h-[500px] sm:pb-40 -mt-36 sm:mt-auto">
+    <section className="flex h-screen items-center">
       <LeftSection />
       <div className="sm:w-3/4 flex items-center pl-5">
-        <div className={`${spaceGrotesk.className} flex justify-center flex-col h-full`}>
+        <div
+          className={`${spaceGrotesk.className} flex justify-center flex-col h-full`}
+        >
           <Reveal
             variant={{
               hidden: { opacity: 0, x: 75 },
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <p className={`${titilliumWeb.className} text-2xl mt-4 ml-1 sm:ml-2`}>
+            <p
+              className={`${titilliumWeb.className} text-2xl mt-4 ml-1 sm:ml-2`}
+            >
               Need a frontend developer?
             </p>
           </Reveal>
@@ -37,5 +41,5 @@ export const Section5 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
