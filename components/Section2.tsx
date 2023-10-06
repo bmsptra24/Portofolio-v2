@@ -1,35 +1,33 @@
-"use client";
-import { spaceGrotesk, titilliumWeb } from "@/styles/global";
-import React, { useEffect } from "react";
-import { LeftSection } from "./LeftSection";
-import { Reveal } from "@/animations/Reveal";
-import { variantReveal } from "@/animations/variant";
-import { Meteor } from "./Meteor";
-import iconJs from "../public/js.png";
-import anime from "animejs";
-import { techStack } from "@/config-main";
+'use client'
+import { spaceGrotesk, titilliumWeb } from '@/styles/global'
+import React, { useEffect } from 'react'
+import { LeftSection } from './LeftSection'
+import { Reveal } from '@/animations/Reveal'
+import { variantReveal } from '@/animations/variant'
+import { Meteor } from './Meteor'
+import anime from 'animejs'
+import { techStack } from '@/config-main'
 
 export const Section2 = () => {
   useEffect(() => {
-    const path = anime.path("#motion-path path");
+    const path = anime.path('#motion-path path')
 
-    const meteorTargets = document.querySelectorAll(".meteor");
     const animation = anime.timeline({
-      targets: ".meteor",
-      translateX: path("x"),
-      translateY: path("y"),
-      keyframes: [{ scale: "125%" }, { scale: "0%" }],
-      easing: "easeInOutSine",
+      targets: '.meteor',
+      translateX: path('x'),
+      translateY: path('y'),
+      keyframes: [{ scale: '125%' }, { scale: '0%' }],
+      easing: 'easeInOutSine',
       duration: 10000,
       loop: true,
-      direction: "reverse",
+      direction: 'reverse',
       delay: anime.stagger(580, { start: 0 }),
-    });
+    })
     animation.add({
-      targets: ".meteor",
-      scale: "0%",
-    });
-  }, []);
+      targets: '.meteor',
+      scale: '0%',
+    })
+  }, [])
 
   return (
     <section className="flex h-[710px]">
@@ -71,5 +69,5 @@ export const Section2 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

@@ -17,17 +17,17 @@ import img3 from './public/project/mbd/3.png'
 import img4 from './public/project/mbd/4.png'
 
 export const techStack = [
-  // astro.src,
-  bootstrap.src,
-  // express.src,
-  node.src,
+  next.src,
+  react.src, //last
+  tailwind.src,
   js.src,
   css.src,
   html.src,
+  node.src,
   firebase.src,
-  tailwind.src,
-  // next.src,
-  react.src, //first
+  bootstrap.src,
+  // astro.src,
+  // express.src,
 ]
 
 export const projectConfig = [
