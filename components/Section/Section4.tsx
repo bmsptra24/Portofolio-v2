@@ -1,8 +1,8 @@
-import { spaceGrotesk, titilliumWeb } from "@/styles/global";
-import React from "react";
-import { LeftSection } from "./LeftSection";
-import { Reveal } from "@/animations/Reveal";
-import Link from "next/link";
+import { spaceGrotesk, titilliumWeb } from '@/styles/global'
+import React from 'react'
+import { LeftSection } from '../Decoration/LeftSection'
+import { Reveal } from '@/animations/Reveal'
+import Link from 'next/link'
 
 export const Section4 = () => {
   return (
@@ -45,7 +45,7 @@ export const Section4 = () => {
                   target="_blank"
                   className="hover:underline transition-all ease-in-out"
                   href={
-                    "https://open.spotify.com/track/4GfK1qOF3uBWidbPlTCQRL?si=403785948dc84fc9"
+                    'https://open.spotify.com/track/4GfK1qOF3uBWidbPlTCQRL?si=403785948dc84fc9'
                   }
                 >
                   Tulus
@@ -54,7 +54,7 @@ export const Section4 = () => {
                   target="_blank"
                   className="hover:underline transition-all ease-in-out"
                   href={
-                    "https://open.spotify.com/track/0InJPuWIYp8fwlBGIQglLf?si=d4b6671f46b84678"
+                    'https://open.spotify.com/track/0InJPuWIYp8fwlBGIQglLf?si=d4b6671f46b84678'
                   }
                 >
                   Maudy Ayunda
@@ -65,5 +65,5 @@ export const Section4 = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

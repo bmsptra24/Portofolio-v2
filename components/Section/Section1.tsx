@@ -1,6 +1,6 @@
 import { spaceGrotesk, titilliumWeb } from '@/styles/global'
 import React from 'react'
-import { LeftSection } from './LeftSection'
+import { LeftSection } from '../Decoration/LeftSection'
 import { Reveal } from '@/animations/Reveal'
 import { techStack } from '@/config-main'
 

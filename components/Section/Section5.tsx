@@ -1,7 +1,7 @@
 'use client'
 import { spaceGrotesk, titilliumWeb } from '@/styles/global'
 import React from 'react'
-import { LeftSection } from './LeftSection'
+import { LeftSection } from '../Decoration/LeftSection'
 import { Reveal } from '@/animations/Reveal'
 import anime from 'animejs'
 import Link from 'next/link'

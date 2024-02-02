@@ -1,10 +1,10 @@
 'use client'
 import { spaceGrotesk, titilliumWeb } from '@/styles/global'
 import React, { useEffect } from 'react'
-import { LeftSection } from './LeftSection'
+import { LeftSection } from '../Decoration/LeftSection'
 import { Reveal } from '@/animations/Reveal'
 import { variantReveal } from '@/animations/variant'
-import { Meteor } from './Meteor'
+import { Meteor } from '../Decoration/Meteor'
 import anime from 'animejs'
 import { techStack } from '@/config-main'
 
