@@ -9,11 +9,12 @@ export const Header = () => {
   return (
     <header className="container mx-auto px-7 lg:px-28 h-20 flex items-center justify-between fixed z-10">
       <Reveal variant={variantReveal.t}>
-        <p
+        <Link
+          href={'https://bmsptra24-blog.vercel.app/blog'}
           className={`${titilliumWeb.className} cursor-pointer hover:scale-110 hover:text-one transition-all ease-in-out`}
         >
-          About
-        </p>
+          Blog
+        </Link>
       </Reveal>
       <Reveal variant={variantReveal.t}>
         <div className="text-2xl flex gap-5">
